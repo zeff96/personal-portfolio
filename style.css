@@ -130,3 +130,55 @@ html {
   flex-grow: 0;
 }
 
+.social-media-icons {
+  width: 170.17px;
+  height: 20px;
+  flex: none;
+  order: 3;
+  flex-grow: 0;
+}
+
+.twitter {
+  position: absolute;
+  left: 6.4%;
+  right: 88.27%;
+  top: 77.81%;
+  bottom: 18.88%;
+  color: #505F79;
+}
+
+.linkedin {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: 63px;
+  top: 470px;
+  color: #505F79;
+}
+
+.medium {
+  position: absolute;
+  left: 27.47%;
+  right: 67.2%;
+  top: 78.15%;
+  bottom: 19.21%;
+  color: #505F79;
+}
+
+.github {
+  position: absolute;
+  left: 38.13%;
+  right: 57.07%;
+  top: 77.81%;
+  bottom: 18.87%;
+  color: #505F79
+}
+
+.angellist {
+  position: absolute;
+  left: 48%;
+  right: 48.22%;
+  top: 77.81%;
+  bottom: 18.87%;
+  color: #505F79;
+}
