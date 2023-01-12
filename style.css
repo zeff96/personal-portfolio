@@ -103,3 +103,30 @@ html {
   flex-grow: 0;
 }
 
+.social-media {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 16px;
+  width: 117px;
+  height: 24px;
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+}
+
+.support-text {
+  width: 117px;
+  height: 24px;
+  font-family: Poppins, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 24px;
+  color: #7F8CFF;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
