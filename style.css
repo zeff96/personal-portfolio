@@ -23,3 +23,24 @@ html {
   bottom: 0px;
 }
 
+.logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px 12px;
+
+  position: absolute;
+  width: 100px;
+  height: 40px;
+  left: 12px;
+}
+
+.logo p {
+  font-family: Poppins, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  color: #6070FF;
+  text-transform: capitalize;
+}
