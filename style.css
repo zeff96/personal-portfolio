@@ -7,3 +7,11 @@ html {
   padding: 0;
   box-sizing: border-box;
 }
+
+.header {
+  position: relative;
+  width: 37.5rem;
+  height: 541rem;
+  background: #F7F7F9;
+}
+
