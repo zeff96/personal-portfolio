@@ -159,7 +159,6 @@ html {
     left: calc(50% - 92rem / 2);
     top: 9.2rem;
   }
-  
   .head-section {
     width: 92rem;
     height: 15rem;
@@ -175,7 +174,6 @@ html {
     order: 0;
     flex-grow: 0;
   }
-  
   .para-section {
     width: 92rem;
     height: 14.6rem;
