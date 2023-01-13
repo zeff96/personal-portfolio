@@ -205,7 +205,7 @@ body {
 
 .btn {
   padding: 1.2rem;
-  border:  1px solid #6070ff;
+  border: 1px solid #6070ff;
   border-radius: 0.8rem;
   text-transform: capitalize;
   font-family: Poppins, sans-serif;
@@ -427,7 +427,7 @@ body {
   .frame {
     font-size: 1.3rem;
   }
-  
+
   .about {
     background-color: #fff;
     width: 50rem;
