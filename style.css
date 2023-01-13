@@ -145,7 +145,6 @@ html {
   color: #505f79;
 }
 
-
 @media (min-width: 920px) {
   .text {
     background: url("images/Header\ bg.svg");
@@ -156,7 +155,6 @@ html {
     padding: 11.4rem 2.4rem;
     gap: 1.2rem;
     position: absolute;
-    
     height: 60.4rem;
     left: calc(50% - 92rem / 2);
     top: 9.2rem;
