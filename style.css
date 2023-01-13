@@ -58,7 +58,7 @@ html {
 }
 
 .text {
-  background: url("header-shapes\ mobile.png");
+  background: url("images/header-shapes\ mobile.png");
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
@@ -148,7 +148,7 @@ html {
 
 @media (min-width: 920px) {
   .text {
-    background: url("Header\ bg.svg");
+    background: url("images/Header\ bg.svg");
     background-size: cover;
     display: flex;
     flex-direction: column;
