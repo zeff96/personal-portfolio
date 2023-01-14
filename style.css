@@ -511,10 +511,10 @@ body {
 
   .frame .role,
   .frame .year {
-  text-transform: capitalize;
-  font-weight: 600;
-  color: #7a869a;
-}
+    text-transform: capitalize;
+    font-weight: 600;
+    color: #7a869a;
+  }
 
   .para {
     font-size: 1.5rem;
