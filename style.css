@@ -307,13 +307,20 @@ body {
   transform: translateY(-50%);
 }
 
+.languages ul {
+  display: flex;
+  gap: 1.2rem;
+}
+
 .language {
   width: 12.2rem;
   height: 12rem;
   background-color: #f7f7f9;
   border-radius: 0.8rem;
   display: flex;
-  align-items: flex-end;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
   padding-left: 1rem;
   padding-bottom: 1rem;
   font-family: Poppins, sans-serif;
