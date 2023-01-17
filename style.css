@@ -12,7 +12,6 @@ body {
   display: flex;
   flex-direction: column;
   padding-top: 7.2rem;
-  padding-bottom: 15rem;
   width: 37.5rem;
   background: #e5e5e5;
 }
@@ -251,6 +250,11 @@ body {
   color: #fff;
 }
 
+.btn:disabled {
+  background: #fff;
+  color: #5e6c84;
+}
+
 .about {
   background-color: #fff;
   width: 100vw;
@@ -383,7 +387,7 @@ body {
 .form {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   width: 44.7rem;
 }
 
@@ -393,8 +397,18 @@ body {
   height: 4.8rem;
   background: #fff;
   border: 1px solid #cfd8dc;
-  border-radius: 0.2rem;
+  border-radius: 0.8rem;
   margin-bottom: 2rem;
+}
+
+.input-form::placeholder {
+  padding-left: 1.6rem;
+  font-family: Poppins, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 2rem;
+  color: #172b4d;
 }
 
 .textarea {
@@ -404,7 +418,7 @@ body {
   resize: none;
   background: #fff;
   border: 1px solid #cfd8dc;
-  border-radius: 0.2rem;
+  border-radius: 0.8rem;
   margin-bottom: 3rem;
 }
 
@@ -417,7 +431,7 @@ body {
   color: #b3bac5;
 }
 
-.button {
+.submit {
   width: 14.2rem;
   height: 4.8rem;
   padding: 1.2rem 1.6rem;
@@ -425,6 +439,7 @@ body {
   border: none;
   border-radius: 0.8rem;
   font-family: Poppins, sans-serif;
+  text-transform: capitalize;
   font-weight: 500;
   font-size: 1.7rem;
   text-align: center;
@@ -435,8 +450,19 @@ body {
   cursor: pointer;
 }
 
-.button:hover {
-  opacity: 0.5;
+.submit:hover {
+  color: #fff;
+  background-color: #6070ff;
+}
+
+.submit:active {
+  background-color: #2230d2;
+  color: #fff;
+}
+
+.submit:disabled {
+  background: #fff;
+  color: #5e6c84;
 }
 
 @media (max-width: 500px) {
