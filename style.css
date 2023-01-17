@@ -439,6 +439,7 @@ body {
   border: none;
   border-radius: 0.8rem;
   font-family: Poppins, sans-serif;
+  text-transform: capitalize;
   font-weight: 500;
   font-size: 1.7rem;
   text-align: center;
