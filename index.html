@@ -300,13 +300,11 @@
     <p>
       If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I&#8217;d love to help with it 
     </p>
-    <form action="" class="form">
-      <input type="text" name="name" id="name" class="input-form">
-      <input type="email" name="email" id="email" class="input-form">
-      <textarea name="textarea" id="textarea" class="textarea" placeholder="write your message here"></textarea>
-      <a class="action" href="#">
-        <button class="button">get it touch</button>
-      </a>
+    <form action="https://formspree.io/f/%7Bform_id%7D" method="post" class="form">
+      <input type="text" name="name" id="name" class="input-form" placeholder="Enter name" maxlength="30" required autofocus>
+      <input type="email" name="email" id="email" class="input-form" placeholder="Enter email" required autofocus>
+      <textarea name="textarea" id="textarea" class="textarea" placeholder="write your message here" maxlength="500" required autofocus></textarea>
+      <input type="submit" value="submit" class="submit"></input>
     </form>
   </section>
 </body>
