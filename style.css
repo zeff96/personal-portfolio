@@ -252,6 +252,11 @@ body {
   color: #fff;
 }
 
+.btn:disabled {
+  background: #fff;
+  color: #5e6c84;
+}
+
 .about {
   background-color: #fff;
   width: 100vw;
