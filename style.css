@@ -241,12 +241,14 @@ body {
   background-color: #fff;
 }
 
-.btn:hover {
+.btn:hover,
+.submit:hover {
   color: #fff;
   background-color: #6070ff;
 }
 
-.btn:active {
+.btn:active,
+.submit:active {
   background-color: #2230d2;
   color: #fff;
 }
@@ -383,7 +385,7 @@ body {
 .form {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   width: 44.7rem;
 }
 
@@ -395,6 +397,21 @@ body {
   border: 1px solid #cfd8dc;
   border-radius: 0.2rem;
   margin-bottom: 2rem;
+  position: relative;
+}
+
+.input-form::placeholder {
+  position: absolute;
+  height: 2.0rem;
+  left: 1.6rem;
+  right: 3.8rem;
+  top: calc(50% - 2.0rem / 2);
+  font-family: Poppins, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 2.0rem;
+  color: #172b4d;
 }
 
 .textarea {
@@ -417,7 +434,7 @@ body {
   color: #b3bac5;
 }
 
-.button {
+.submit {
   width: 14.2rem;
   height: 4.8rem;
   padding: 1.2rem 1.6rem;
@@ -433,10 +450,6 @@ body {
   color: #6070ff;
   transition: all 0.4s;
   cursor: pointer;
-}
-
-.button:hover {
-  opacity: 0.5;
 }
 
 @media (max-width: 500px) {
