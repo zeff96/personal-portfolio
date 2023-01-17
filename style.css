@@ -12,7 +12,6 @@ body {
   display: flex;
   flex-direction: column;
   padding-top: 7.2rem;
-  padding-bottom: 15rem;
   width: 37.5rem;
   background: #e5e5e5;
 }
@@ -395,17 +394,12 @@ body {
   height: 4.8rem;
   background: #fff;
   border: 1px solid #cfd8dc;
-  border-radius: 0.2rem;
+  border-radius: 0.8rem;
   margin-bottom: 2rem;
-  position: relative;
 }
 
 .input-form::placeholder {
-  position: absolute;
-  height: 2.0rem;
-  left: 1.6rem;
-  right: 3.8rem;
-  top: calc(50% - 2.0rem / 2);
+  padding-left: 1.6rem;
   font-family: Poppins, sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -421,7 +415,7 @@ body {
   resize: none;
   background: #fff;
   border: 1px solid #cfd8dc;
-  border-radius: 0.2rem;
+  border-radius: 0.8rem;
   margin-bottom: 3rem;
 }
 
