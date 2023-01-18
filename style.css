@@ -28,7 +28,6 @@ a {
   position: fixed;
   height: 7.2rem;
   background-color: #fff;
-  display: flex;
   top: 0;
   z-index: 200;
   display: flex;
@@ -594,4 +593,3 @@ a {
     color: #253858;
   }
 }
-
