@@ -22,7 +22,7 @@ a {
 }
 
 .header {
-  width: 100vw;
+  width: 100%;
   padding: 0 5rem;
   position: fixed;
   height: 7.2rem;
@@ -62,9 +62,8 @@ a {
 }
 
 .text {
-  min-width: 27rem;
-  margin: 0 auto;
-  height: 60.4rem;
+  width: 100%;
+  height: 71.8rem;
   padding: 11.4rem 2.4rem;
   display: flex;
   justify-content: center;
@@ -77,8 +76,7 @@ a {
 }
 
 .text-section {
-  min-width: 27rem;
-  max-width: 92rem;
+  width: 87.2%;
   margin: 0 auto;
   font-family: Poppins, sans-serif;
 }
@@ -127,7 +125,7 @@ a {
 }
 
 .work {
-  margin: 0 auto;
+  width: 100%;
   display: flex;
   flex-direction: column;
   gap: 8.8rem;
@@ -136,17 +134,14 @@ a {
 }
 
 .card-work {
-  display: grid;
+  width: 90.2%;
+  margin: 0 auto;
   background: #fff;
+  display: grid;
   grid-template-columns: 1fr;
   gap: 1.2rem;
   border-radius: 4rem;
   padding: 1.6rem;
-}
-
-.snapshot-portfolio {
-  min-width: 26.5rem;
-  height: auto;
 }
 
 .snapshot-portfolio img {
@@ -170,11 +165,9 @@ a {
   font-weight: 700;
   color: #091e42;
   text-transform: capitalize;
-  min-width: 29.5rem;
 }
 
 .frame {
-  min-width: 23.6rem;
   display: flex;
   align-items: center;
   gap: 1.2rem;
@@ -206,7 +199,7 @@ a {
   font-weight: 400;
   line-height: 2.4rem;
   color: #344563;
-  min-width: 29.5rem;
+  width: 80%;
 }
 
 .tags ul {
@@ -266,8 +259,9 @@ a {
 .about {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  min-width: 32rem;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
   background-color: #fff;
   gap: 2.4rem;
   border-top-right-radius: 10rem;
@@ -275,7 +269,8 @@ a {
 }
 
 .about-text-section {
-  min-width: 27rem;
+  width: 87.2%;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -300,6 +295,10 @@ a {
   color: #344563;
 }
 
+.skills-container {
+  width: 100%;
+}
+
 .language-title {
   font-family: Poppins, sans-serif;
   font-weight: 500;
@@ -311,6 +310,7 @@ a {
   position: relative;
   display: flex;
   align-items: center;
+  width: 100%;
 }
 
 .languages ul {
@@ -320,7 +320,7 @@ a {
 }
 
 .language {
-  width: 27rem;
+  width: 100%;
   height: 6.672rem;
   background-color: #f7f7f9;
   border-radius: 0.8rem;
@@ -350,7 +350,7 @@ a {
 
 .framework,
 .skill {
-  min-width: 27rem;
+  width: 100%;
   font-family: Poppins, sans-serif;
   font-weight: 500;
   font-size: 2rem;
@@ -386,8 +386,8 @@ a {
 }
 
 .contact-text {
-  min-width: 27rem;
-  max-width: 56.9rem;
+  width: 87.2%;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -495,7 +495,7 @@ a {
   color: #5e6c84;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 960px) {
 
   .hamburger-menu {
     display: none;
@@ -534,26 +534,29 @@ a {
     font-size: 2rem;
   }
 
-  .work {
-    min-width: 100rem;
-  }
-
   .card-work {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
   }
 
-  .snapshot-portfolio {
-    min-width: 54.4rem;
+  .card-2 .snapshot-portfolio,
+  .card-4 .snapshot-portfolio {
+    grid-column: 2/3;
+  }
+
+  .card-2 .left-block,
+  .card-4 .left-block {
+    grid-row: 1/2;
   }
 
   .left-block {
-    min-width: 54.4rem;
+    width: 100%;
     padding: 2.4rem;
     gap: 2.4rem;
   }
 
   .about {
+    width: 100%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
@@ -583,17 +586,5 @@ a {
     left: 1.2rem;
     top: 7.6rem;
     color: #253858;
-  }
-}
-
-@media (min-width: 1280px) {
-  .card-work {
-    display: flex;
-  }
-
-  .card-2,
-  .card-4 {
-    display: flex;
-    flex-direction: row-reverse;
   }
 }
