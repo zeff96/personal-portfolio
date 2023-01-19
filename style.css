@@ -595,4 +595,18 @@ a {
     top: 7.6rem;
     color: #253858;
   }
+
+  .logo {
+    animation: animate 4s;
+  }
+
+  @keyframes animate {
+    from{
+      transform: rotate(0);
+    }
+
+    to{
+      transform: rotate(180deg);
+    }
+  }
 }
