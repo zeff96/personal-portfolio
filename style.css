@@ -496,7 +496,6 @@ a {
 }
 
 @media (min-width: 960px) {
-
   .hamburger-menu {
     display: none;
   }
@@ -544,15 +543,15 @@ a {
     grid-column: 2/3;
   }
 
-  .card-2 .left-block,
-  .card-4 .left-block {
-    grid-row: 1/2;
-  }
-
   .left-block {
     width: 100%;
     padding: 2.4rem;
     gap: 2.4rem;
+  }
+
+  .card-2 .left-block,
+  .card-4 .left-block {
+    grid-row: 1/2;
   }
 
   .about {
