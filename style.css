@@ -544,6 +544,14 @@ a {
     grid-column: 2/3;
   }
 
+  .snapshot-portfolio {
+    transition: all 0.4s ease-out;
+  }
+
+  .snapshot-portfolio img:hover {
+    transform: scale(1.1);
+  }
+
   .left-block {
     width: 100%;
     padding: 2.4rem;
