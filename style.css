@@ -544,14 +544,6 @@ a {
     grid-column: 2/3;
   }
 
-  .snapshot-portfolio {
-    transition: all 0.4s ease-out;
-  }
-
-  .snapshot-portfolio img:hover {
-    transform: scale(1.1);
-  }
-
   .left-block {
     width: 100%;
     padding: 2.4rem;
@@ -594,19 +586,5 @@ a {
     left: 1.2rem;
     top: 7.6rem;
     color: #253858;
-  }
-
-  .logo {
-    animation: animate 4s;
-  }
-
-  @keyframes animate {
-    from{
-      transform: rotate(0);
-    }
-
-    to{
-      transform: rotate(180deg);
-    }
   }
 }
