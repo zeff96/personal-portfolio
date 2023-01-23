@@ -54,7 +54,7 @@ All my professional and technical projects are contained in this project.
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 
-- [Live Demo Link](https://raw.githack.com/https:/github.com/zeff96/Portfolio-setup-and-mobile-first)
+- [Live Demo Link]https://zeff96.github.io/Portfolio.github.io/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -101,14 +101,21 @@ To run the project, execute the following command:
 
 
 ```sh
-  npm i<br>
+  npm i
   npm start
 ```
 
-
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+### Deployment
+
+To run this project on website run:
+
+```sh
+  https://zeff96.github.io/Portfolio.github.io/
+```
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 👥 Authors <a name="authors"></a>
 
