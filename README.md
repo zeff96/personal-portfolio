@@ -105,11 +105,15 @@ To run the project, execute the following command:
   npm start
 ```
 
-
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+### Deployment
 
+To run this project on website run:
+
+```sh
+  https://zeff96.github.io/Portfolio.github.io/
+```
 ## 👥 Authors <a name="authors"></a>
 
 👤 **Author**
