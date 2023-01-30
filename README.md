@@ -82,7 +82,7 @@ Clone this repository to your desired folder:
 
 ```sh
   cd my-folder
-  git clone git@github.com:zeff96/Portfolio-setup-and-mobile-first.git
+  git clone git@github.com:zeff96/Personal-Portfolio.git
 ```
 
 ### Install
@@ -99,10 +99,10 @@ Install this project with:
 
 To run the project, execute the following command:
 
+run the link below on your web browser.
 
 ```sh
-  npm i
-  npm start
+  https://zeff96.github.io/Portfolio.github.io/
 ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
