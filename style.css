@@ -512,7 +512,7 @@ a {
     gap: 0.8rem;
     position: fixed;
     inset: 0 0 0 0;
-    background-color: hsla(234, 100%, 69%, 0.9);
+    background-color: hsla(234, 100%, 69%, 0.98);
     padding-top: 9rem;
     padding-left: 2.4rem;
   }
