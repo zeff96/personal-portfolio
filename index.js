@@ -57,5 +57,4 @@ for (const i in cardArray) {
   card.append(article);
 
   sectionEl.appendChild(card);
-
 }
