@@ -153,14 +153,15 @@ a {
   padding: 1.6rem;
 }
 
-.snapshot-portfolio img {
+.snapshot-portfolio img,
+.pop-container img {
   width: 100%;
-  height: 100%;
   object-fit: cover;
   border-radius: 0.8rem;
 }
 
-.left-block {
+.left-block,
+.left-blockpop {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -264,6 +265,49 @@ a {
 .btn:disabled {
   background: #fff;
   color: #5e6c84;
+}
+
+.popup {
+  display: none;
+  flex-direction: column;
+  gap: 1.2rem;
+  position: fixed;
+  inset: 0 0 0 0;
+  padding: 1.6rem;
+  background-color: #fff;
+  z-index: 1000;
+}
+
+.show {
+  display: flex;
+}
+
+.pop-para {
+  max-width: 77.8rem;
+  font-family: Poppins, sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 2.4rem;
+  color: #344563;
+}
+
+.right-block {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.btn-container {
+  display: flex;
+  gap: 1.2rem;
+}
+
+.xmark {
+  width: 2.4rem;
+  height: 2.4rem;
+  position: absolute;
+  right: 3%;
+  cursor: pointer;
 }
 
 .about {
@@ -570,6 +614,20 @@ a {
     grid-template-columns: repeat(2, 1fr);
   }
 
+  .popup {
+    margin-inline: 10.2rem;
+  }
+
+  .pop-container {
+    max-height: 45rem;
+  }
+
+  .pop-container img {
+    width: 100%;
+    height: 100%;
+    object-position: center;
+  }
+
   .card-2 .snapshot-portfolio,
   .card-4 .snapshot-portfolio {
     grid-column: 2/3;
@@ -581,10 +639,17 @@ a {
     gap: 2.4rem;
   }
 
+  .left-blockpop {
+    flex-direction: row;
+    gap: 2.4rem;
+  }
+
   .card-2 .left-block,
   .card-4 .left-block {
     grid-row: 1/2;
   }
+
+
 
   .about {
     width: 100%;
