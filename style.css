@@ -486,6 +486,16 @@ a {
 
 .form-control {
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  margin-bottom: 2rem;
+}
+
+.msg {
+  font-family: Poppins, sans-serif;
+  font-size: 1.8rem;
+  color: #172b4d;
 }
 
 .input-form {
