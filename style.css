@@ -312,6 +312,12 @@ a {
   cursor: pointer;
 }
 
+.span {
+  width: 2.4rem;
+  height: 2.4rem;
+  margin-left: 0.5rem;
+}
+
 .about {
   display: flex;
   flex-direction: column;
@@ -617,12 +623,13 @@ a {
   }
 
   .popup {
-    align-items: center;
+    align-items: start;
     padding: 7.7rem;
   }
 
   .pop-container img {
-    width: 92rem;
+    width: 110.8rem;
+    height: 56.8rem;
   }
 
   .card-2 .snapshot-portfolio,
@@ -639,7 +646,6 @@ a {
   .left-blockpop {
     flex-direction: row;
     gap: 2.4rem;
-    max-width: 92rem;
   }
 
   .card-2 .left-block,
