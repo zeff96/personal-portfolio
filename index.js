@@ -176,26 +176,27 @@ cards.forEach((elem) => {
   });
 });
 
-formEl.addEventListener('submit', (e) => {
-  e.preventDefault();
 
-  checkInput();
-});
+function showError(input, message) {
+  msgEl.innerHTML = message;
+}
 
-function checkInput(){
+function showSuccess() {
+  formControl.classList.add('valid');
+}
+
+function checkInput() {
   const emailValue = emailEl.value;
 
-  if(emailValue !== emailValue.toLowerCase()){
-    showError(emailEl, 'The content has to be in lower case!')
+  if (emailValue !== emailValue.toLowerCase()) {
+    showError(emailEl, 'The content has to be in lower case!');
   }else {
     showSuccess(emailEl);
   }
 }
 
-function showError(input, message){
-  msgEl.innerHTML = message;
-}
+formEl.addEventListener('submit', (e) => {
+  e.preventDefault();
 
-function showSuccess(input){
-  formControl.classList.add('valid');
-}
+  checkInput();
+});
