@@ -3,6 +3,11 @@ const closeEl = document.querySelector('.close-btn');
 const hamburgerEl = document.querySelector('.menu-icon');
 const linksEl = document.querySelectorAll('.nav-links');
 
+const formEl = document.querySelector('.form');
+const formControl = document.querySelector('.form-control');
+const emailEl = document.getElementById('email');
+const msgEl = document.querySelector('.msg');
+
 hamburgerEl.addEventListener('click', () => {
   navEl.classList.add('active');
 });
@@ -170,3 +175,27 @@ cards.forEach((elem) => {
     popup.classList.toggle('show');
   });
 });
+
+formEl.addEventListener('submit', (e) => {
+  e.preventDefault();
+
+  checkInput();
+});
+
+function checkInput(){
+  const emailValue = emailEl.value;
+
+  if(emailValue !== emailValue.toLowerCase()){
+    showError(emailEl, 'The content has to be in lower case!')
+  }else {
+    showSuccess(emailEl);
+  }
+}
+
+function showError(input, message){
+  msgEl.innerHTML = message;
+}
+
+function showSuccess(input){
+  formControl.classList.add('valid');
+}
