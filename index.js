@@ -23,23 +23,28 @@ const cardArray = [
     title: 'tonic',
     img: 'snapshot-portfolio/tonic.png',
     text: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    tech: ['html', 'css', 'javascript'],
     description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
   }, {
     title: 'Multi-post stories',
     img: 'snapshot-portfolio/Multi-post.png',
     text: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    tech: ['html', 'css', 'javascript'],
     description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
   }, {
     title: 'tonic',
     img: 'snapshot-portfolio/Snapshoot Portfolio.png',
     text: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    tech: ['html', 'css', 'javascript'],
     description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
   }, {
     title: 'Multi-post stories',
     img: 'snapshot-portfolio/Snapshoot .png',
     text: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    tech: ['html', 'css', 'javascript'],
     description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
   },
+
 ];
 
 const frameInfo = `
@@ -56,39 +61,37 @@ const frameInfo = `
   </p>
 `;
 
-const tech = `
-  <ul>
-    <li>html</li>
-    <li>css</li>
-    <li>javascript</li>
-  </ul>
-`;
 const cards = Object.keys(cardArray);
 
-cards.forEach((i) => {
+cards.forEach((elem) => {
   const card = document.createElement('div');
   card.classList.add('card-work');
 
   const imgContainer = document.createElement('div');
   imgContainer.classList.add('snapshot-portfolio');
   const img = document.createElement('img');
-  img.setAttribute('src', cardArray[i].img);
+  img.setAttribute('src', cardArray[elem].img);
   imgContainer.appendChild(img);
 
   const leftBlock = document.createElement('div');
   leftBlock.classList.add('left-block');
   const title = document.createElement('h2');
   title.classList.add('work-title');
-  title.innerHTML = cardArray[i].title;
+  title.innerHTML = cardArray[elem].title;
   const frame = document.createElement('div');
   frame.classList.add('frame');
   frame.innerHTML = frameInfo;
   const para = document.createElement('p');
   para.classList.add('para');
-  para.innerHTML = cardArray[i].text;
-  const tags = document.createElement('div');
+  para.innerHTML = cardArray[elem].text;
+  const tags = document.createElement('ul');
   tags.classList.add('tags');
-  tags.innerHTML = tech;
+
+  cardArray[elem].tech.forEach((item) => {
+    const tagChild = document.createElement('li');
+    tagChild.innerHTML = item;
+    tags.appendChild(tagChild);
+  });
   const buttonEl = document.createElement('button');
   buttonEl.classList.add('btn');
   buttonEl.innerHTML = 'see project';
@@ -98,7 +101,7 @@ cards.forEach((i) => {
 
   const header = document.createElement('h2');
   header.classList.add('work-title');
-  header.innerHTML = cardArray[i].title;
+  header.innerHTML = cardArray[elem].title;
 
   const popFrame = document.createElement('div');
   popFrame.classList.add('frame');
@@ -107,16 +110,21 @@ cards.forEach((i) => {
   const popContainer = document.createElement('div');
   popContainer.classList.add('pop-container');
   const popimg = document.createElement('img');
-  popimg.setAttribute('src', cardArray[i].img);
+  popimg.setAttribute('src', cardArray[elem].img);
   popContainer.appendChild(popimg);
 
   const lang = document.createElement('ul');
   lang.classList.add('tags');
-  lang.innerHTML = tech;
+
+  cardArray[elem].tech.forEach((item) => {
+    const tagChild = document.createElement('li');
+    tagChild.innerHTML = item;
+    lang.appendChild(tagChild);
+  });
 
   const txt = document.createElement('p');
   txt.classList.add('pop-para');
-  txt.innerHTML = cardArray[i].description;
+  txt.innerHTML = cardArray[elem].description;
 
   const btnLive = document.createElement('button');
   btnLive.classList.add('btn');
