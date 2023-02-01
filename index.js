@@ -176,7 +176,6 @@ cards.forEach((elem) => {
   });
 });
 
-
 function showError(input, message) {
   msgEl.innerHTML = message;
 }
@@ -190,7 +189,7 @@ function checkInput() {
 
   if (emailValue !== emailValue.toLowerCase()) {
     showError(emailEl, 'The content has to be in lower case!');
-  }else {
+  } else {
     showSuccess(emailEl);
   }
 }
