@@ -128,10 +128,18 @@ cards.forEach((elem) => {
 
   const btnLive = document.createElement('button');
   btnLive.classList.add('btn');
+  const icon = document.createElement('img');
+  icon.classList.add('span');
+  icon.setAttribute('src', 'icons/icon.png');
   btnLive.innerHTML = 'see live';
+  btnLive.appendChild(icon);
   const btnSrc = document.createElement('button');
   btnSrc.classList.add('btn');
+  const gitIcon = document.createElement('img');
+  gitIcon.classList.add('span');
+  gitIcon.setAttribute('src', 'icons/icons8-github-48.png');
   btnSrc.innerHTML = 'see source';
+  btnSrc.appendChild(gitIcon);
   const btnContainer = document.createElement('div');
   btnContainer.classList.add('btn-container');
   btnContainer.append(btnLive, btnSrc);
