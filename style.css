@@ -495,7 +495,11 @@ a {
 .msg {
   font-family: Poppins, sans-serif;
   font-size: 1.8rem;
-  color: #172b4d;
+  color: rgb(208, 34, 34);
+}
+
+.valid {
+  border: 1px solid rgb(82, 169, 82);
 }
 
 .input-form {
@@ -505,7 +509,6 @@ a {
   background: #fff;
   border: 1px solid #cfd8dc;
   border-radius: 0.8rem;
-  margin-bottom: 2rem;
 }
 
 .input-form::placeholder {
