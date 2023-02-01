@@ -473,6 +473,7 @@ a {
   color: #ebebff;
   text-align: center;
   margin: 2rem;
+  max-width: 56.9rem;
 }
 
 .form {
@@ -481,6 +482,10 @@ a {
   align-items: flex-start;
   min-width: 27rem;
   max-width: 44.7rem;
+}
+
+.form-control {
+  width: 100%;
 }
 
 .input-form {
