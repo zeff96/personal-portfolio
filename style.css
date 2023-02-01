@@ -213,14 +213,14 @@ a {
   width: 80%;
 }
 
-.tags ul {
+.tags {
   display: flex;
   align-items: center;
   gap: 0.8rem;
   list-style: none;
 }
 
-.tags ul li {
+.tags li {
   font-family: Poppins, sans-serif;
   font-weight: 500;
   font-size: 1.2rem;
@@ -276,6 +276,8 @@ a {
   padding: 1.6rem;
   background-color: #fff;
   z-index: 1000;
+  overflow-y: auto;
+  height: 100vh;
 }
 
 .show {
@@ -615,17 +617,13 @@ a {
   }
 
   .popup {
-    margin-inline: 10.2rem;
+    align-items: center;
+    padding: 7.7rem;
   }
 
-  .pop-container {
-    max-height: 45rem;
-  }
 
   .pop-container img {
-    width: 100%;
-    height: 100%;
-    object-position: center;
+    width: 92rem
   }
 
   .card-2 .snapshot-portfolio,
@@ -642,6 +640,7 @@ a {
   .left-blockpop {
     flex-direction: row;
     gap: 2.4rem;
+    max-width: 92rem;
   }
 
   .card-2 .left-block,
