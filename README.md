@@ -119,12 +119,14 @@ To run this project on website run:
 
 ## 👥 Authors <a name="authors"></a>
 
-👤 **Author**
+👤 **Author 1**
 
 - GitHub: [zeff96](https://github.com/zeff96)
 - Twitter: [zeffo96](https://twitter.com/zeffo96)
 - LinkedIn: [zeffo96](https://linkedin.com/in/zeff-adeka-28060820a)
 
+👤 **Author 2**
+- GitHub: [WilhelmK109](https://github.com/WilhelmK109)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
