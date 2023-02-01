@@ -191,6 +191,7 @@ function checkInput() {
     showError(emailEl, 'The content has to be in lower case!');
   } else {
     showSuccess(emailEl);
+    formEl.submit();
   }
 }
 
