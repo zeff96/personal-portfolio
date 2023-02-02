@@ -7,6 +7,8 @@ const formEl = document.querySelector('.form');
 const formControl = document.querySelector('.form-control');
 const emailEl = document.getElementById('email');
 const msgEl = document.querySelector('.msg');
+const nameEl = document.getElementById('name');
+const textEl = document.getElementById('textarea');
 
 hamburgerEl.addEventListener('click', () => {
   navEl.classList.add('active');
