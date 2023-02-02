@@ -182,7 +182,10 @@ cards.forEach((elem) => {
   const btnContainer = document.createElement('div');
   btnContainer.classList.add('btn-container');
 
-  for (const btn in cardArray[elem].demo) {
+  const btnEl = Object.keys(cardArray[elem].demo);
+  console.log(btnEl)
+
+  btnEl.forEach ((btn) => {
     const anchor = document.createElement('a');
     anchor.setAttribute('href', cardArray[elem].demo[btn].path);
     const btns = document.createElement('button');
@@ -195,8 +198,8 @@ cards.forEach((elem) => {
     btns.appendChild(icon);
     anchor.appendChild(btns);
     btnContainer.appendChild(anchor);
-  }
-
+  })
+  
   const rightBlock = document.createElement('div');
   rightBlock.classList.add('right-block');
   rightBlock.append(lang, btnContainer);
