@@ -220,12 +220,12 @@ cards.forEach((elem) => {
 
   buttonEl.addEventListener('click', () => {
     popup.classList.toggle('show');
-    bodyEl.classList.add('flow');
+    bodyEl.classList.add('overlap');
   });
 
   dlt.addEventListener('click', () => {
     popup.classList.toggle('show');
-    bodyEl.classList.remove('flow');
+    bodyEl.classList.remove('overlap');
   });
 });
 
