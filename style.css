@@ -272,16 +272,23 @@ a {
   flex-direction: column;
   gap: 1.2rem;
   position: fixed;
-  inset: 0 0 0 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   padding: 1.6rem;
   background-color: #fff;
   z-index: 1000;
   overflow-y: auto;
   height: 100vh;
+  width: 100vw;
 }
 
 .show {
   display: flex;
+}
+
+.overlap {
+  overflow: hidden;
 }
 
 .pop-para {
@@ -645,14 +652,13 @@ a {
     padding: 7.7rem;
   }
 
-  .pop-container img {
-    width: 110.8rem;
-    height: 56.8rem;
+  .pop-container {
+    width: 100%;
   }
 
-  .card-2 .snapshot-portfolio,
-  .card-4 .snapshot-portfolio {
-    grid-column: 2/3;
+  .pop-container img {
+    width: 100%;
+    height: 56.8rem;
   }
 
   .left-block {
@@ -666,9 +672,8 @@ a {
     gap: 2.4rem;
   }
 
-  .card-2 .left-block,
-  .card-4 .left-block {
-    grid-row: 1/2;
+  .right-block {
+    gap: 3rem;
   }
 
   .about {
