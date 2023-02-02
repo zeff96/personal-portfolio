@@ -38,11 +38,11 @@ const cardArray = [
       {
         val: 'see live',
         icons: 'icons/Icon.png',
-        path: 'https://www.w3.org/Provider/Style/dummy.html'
+        path: 'https://www.w3.org/Provider/Style/dummy.html',
       }, {
         val: 'see source',
         icons: 'icons/icons8-github-48.png',
-        path: 'https://github.com/zeff96/Personal-Portfolio'
+        path: 'https://github.com/zeff96/Personal-Portfolio',
       },
     ],
   }, {
@@ -55,11 +55,11 @@ const cardArray = [
       {
         val: 'see live',
         icons: 'icons/Icon.png',
-        path: 'https://www.w3.org/Provider/Style/dummy.html'
+        path: 'https://www.w3.org/Provider/Style/dummy.html',
       }, {
         val: 'see source',
         icons: 'icons/icons8-github-48.png',
-        path: 'https://github.com/zeff96/Personal-Portfolio'
+        path: 'https://github.com/zeff96/Personal-Portfolio',
       },
     ],
   }, {
@@ -72,11 +72,11 @@ const cardArray = [
       {
         val: 'see live',
         icons: 'icons/Icon.png',
-        path: 'https://www.w3.org/Provider/Style/dummy.html'
+        path: 'https://www.w3.org/Provider/Style/dummy.html',
       }, {
         val: 'see source',
         icons: 'icons/icons8-github-48.png',
-        path: 'https://github.com/zeff96/Personal-Portfolio'
+        path: 'https://github.com/zeff96/Personal-Portfolio',
       },
     ],
   }, {
@@ -89,11 +89,11 @@ const cardArray = [
       {
         val: 'see live',
         icons: 'icons/Icon.png',
-        path: 'https://www.w3.org/Provider/Style/dummy.html'
+        path: 'https://www.w3.org/Provider/Style/dummy.html',
       }, {
         val: 'see source',
         icons: 'icons/icons8-github-48.png',
-        path: 'https://github.com/zeff96/Personal-Portfolio'
+        path: 'https://github.com/zeff96/Personal-Portfolio',
       },
     ],
   },
@@ -182,7 +182,7 @@ cards.forEach((elem) => {
   const btnContainer = document.createElement('div');
   btnContainer.classList.add('btn-container');
 
-  for(let btn in cardArray[elem].demo) {
+  for (const btn in cardArray[elem].demo) {
     const anchor = document.createElement('a');
     anchor.setAttribute('href', cardArray[elem].demo[btn].path);
     const btns = document.createElement('button');
@@ -195,7 +195,7 @@ cards.forEach((elem) => {
     btns.appendChild(icon);
     anchor.appendChild(btns);
     btnContainer.appendChild(anchor);
-  };
+  }
 
   const rightBlock = document.createElement('div');
   rightBlock.classList.add('right-block');
@@ -252,21 +252,20 @@ formEl.addEventListener('submit', (e) => {
   checkInput();
 });
 
+const userData = JSON.parse(localStorage.getItem('userInfo'));
 
-let userData = JSON.parse(localStorage.getItem('userInfo'));
-
-if(userData) {
+if (userData) {
   nameEl.value = userData.name;
   emailEl.value = userData.email;
   textEl.value = userData.text;
-};
+}
 
 formEl.addEventListener('submit', () => {
   const nameData = nameEl.value;
   const emailData = emailEl.value;
   const textData = textEl.value;
 
-  let userInfo = {
+  const userInfo = {
     name: nameData,
     email: emailData,
     text: textData,
