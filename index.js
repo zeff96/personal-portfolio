@@ -7,6 +7,10 @@ const formEl = document.querySelector('.form');
 const formControl = document.querySelector('.form-control');
 const emailEl = document.getElementById('email');
 const msgEl = document.querySelector('.msg');
+const nameEl = document.getElementById('name');
+const textEl = document.getElementById('textarea');
+
+const bodyEl = document.querySelector('body');
 
 hamburgerEl.addEventListener('click', () => {
   navEl.classList.add('active');
@@ -30,24 +34,68 @@ const cardArray = [
     text: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     tech: ['html', 'css', 'javascript'],
     description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
+    demo: [
+      {
+        val: 'see live',
+        icons: 'icons/Icon.png',
+        path: 'https://www.w3.org/Provider/Style/dummy.html',
+      }, {
+        val: 'see source',
+        icons: 'icons/icons8-github-48.png',
+        path: 'https://github.com/zeff96/Personal-Portfolio',
+      },
+    ],
   }, {
     title: 'Multi-post stories',
     img: 'snapshot-portfolio/Multi-post.png',
     text: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     tech: ['html', 'css', 'javascript'],
     description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
+    demo: [
+      {
+        val: 'see live',
+        icons: 'icons/Icon.png',
+        path: 'https://www.w3.org/Provider/Style/dummy.html',
+      }, {
+        val: 'see source',
+        icons: 'icons/icons8-github-48.png',
+        path: 'https://github.com/zeff96/Personal-Portfolio',
+      },
+    ],
   }, {
     title: 'tonic',
     img: 'snapshot-portfolio/Snapshoot Portfolio.png',
     text: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     tech: ['html', 'css', 'javascript'],
     description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
+    demo: [
+      {
+        val: 'see live',
+        icons: 'icons/Icon.png',
+        path: 'https://www.w3.org/Provider/Style/dummy.html',
+      }, {
+        val: 'see source',
+        icons: 'icons/icons8-github-48.png',
+        path: 'https://github.com/zeff96/Personal-Portfolio',
+      },
+    ],
   }, {
     title: 'Multi-post stories',
     img: 'snapshot-portfolio/Snapshoot .png',
     text: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     tech: ['html', 'css', 'javascript'],
     description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
+    demo: [
+      {
+        val: 'see live',
+        icons: 'icons/Icon.png',
+        path: 'https://www.w3.org/Provider/Style/dummy.html',
+      }, {
+        val: 'see source',
+        icons: 'icons/icons8-github-48.png',
+        path: 'https://github.com/zeff96/Personal-Portfolio',
+      },
+    ],
   },
 
 ];
@@ -118,6 +166,10 @@ cards.forEach((elem) => {
   popimg.setAttribute('src', cardArray[elem].img);
   popContainer.appendChild(popimg);
 
+  const txt = document.createElement('p');
+  txt.classList.add('pop-para');
+  txt.innerHTML = cardArray[elem].description;
+
   const lang = document.createElement('ul');
   lang.classList.add('tags');
 
@@ -127,27 +179,26 @@ cards.forEach((elem) => {
     lang.appendChild(tagChild);
   });
 
-  const txt = document.createElement('p');
-  txt.classList.add('pop-para');
-  txt.innerHTML = cardArray[elem].description;
-
-  const btnLive = document.createElement('button');
-  btnLive.classList.add('btn');
-  const icon = document.createElement('img');
-  icon.classList.add('span');
-  icon.setAttribute('src', 'icons/icon.png');
-  btnLive.innerHTML = 'see live';
-  btnLive.appendChild(icon);
-  const btnSrc = document.createElement('button');
-  btnSrc.classList.add('btn');
-  const gitIcon = document.createElement('img');
-  gitIcon.classList.add('span');
-  gitIcon.setAttribute('src', 'icons/icons8-github-48.png');
-  btnSrc.innerHTML = 'see source';
-  btnSrc.appendChild(gitIcon);
   const btnContainer = document.createElement('div');
   btnContainer.classList.add('btn-container');
-  btnContainer.append(btnLive, btnSrc);
+
+  const btnEl = Object.keys(cardArray[elem].demo);
+
+  btnEl.forEach((btn) => {
+    const anchor = document.createElement('a');
+    anchor.setAttribute('href', cardArray[elem].demo[btn].path);
+    const btns = document.createElement('button');
+    btns.classList.add('btn');
+    btns.innerHTML = cardArray[elem].demo[btn].val;
+    const icon = document.createElement('img');
+    icon.classList.add('span');
+    icon.setAttribute('src', cardArray[elem].demo[btn].icons);
+
+    btns.appendChild(icon);
+    anchor.appendChild(btns);
+    btnContainer.appendChild(anchor);
+  });
+
   const rightBlock = document.createElement('div');
   rightBlock.classList.add('right-block');
   rightBlock.append(lang, btnContainer);
@@ -169,10 +220,12 @@ cards.forEach((elem) => {
 
   buttonEl.addEventListener('click', () => {
     popup.classList.toggle('show');
+    bodyEl.classList.add('flow');
   });
 
   dlt.addEventListener('click', () => {
     popup.classList.toggle('show');
+    bodyEl.classList.remove('flow');
   });
 });
 
@@ -200,3 +253,27 @@ formEl.addEventListener('submit', (e) => {
 
   checkInput();
 });
+
+const userData = JSON.parse(localStorage.getItem('userInfo'));
+
+if (userData) {
+  nameEl.value = userData.name;
+  emailEl.value = userData.email;
+  textEl.value = userData.text;
+}
+
+function getData() {
+  const nameData = nameEl.value;
+  const emailData = emailEl.value;
+  const textData = textEl.value;
+
+  const userInfo = {
+    name: nameData,
+    email: emailData,
+    text: textData,
+  };
+
+  localStorage.setItem('userInfo', JSON.stringify(userInfo));
+}
+formEl.addEventListener('input', getData);
+formEl.addEventListener('submit', getData);
