@@ -7,6 +7,8 @@ const formEl = document.querySelector('.form');
 const formControl = document.querySelector('.form-control');
 const emailEl = document.getElementById('email');
 const msgEl = document.querySelector('.msg');
+const nameEl = document.getElementById('name');
+const textEl = document.getElementById('textarea');
 
 const bodyEl = document.querySelector('body');
 
@@ -36,11 +38,11 @@ const cardArray = [
       {
         val: 'see live',
         icons: 'icons/Icon.png',
-        path: 'https://www.w3.org/Provider/Style/dummy.html'
+        path: 'https://www.w3.org/Provider/Style/dummy.html',
       }, {
         val: 'see source',
         icons: 'icons/icons8-github-48.png',
-        path: 'https://github.com/zeff96/Personal-Portfolio'
+        path: 'https://github.com/zeff96/Personal-Portfolio',
       },
     ],
   }, {
@@ -53,11 +55,11 @@ const cardArray = [
       {
         val: 'see live',
         icons: 'icons/Icon.png',
-        path: 'https://www.w3.org/Provider/Style/dummy.html'
+        path: 'https://www.w3.org/Provider/Style/dummy.html',
       }, {
         val: 'see source',
         icons: 'icons/icons8-github-48.png',
-        path: 'https://github.com/zeff96/Personal-Portfolio'
+        path: 'https://github.com/zeff96/Personal-Portfolio',
       },
     ],
   }, {
@@ -70,11 +72,11 @@ const cardArray = [
       {
         val: 'see live',
         icons: 'icons/Icon.png',
-        path: 'https://www.w3.org/Provider/Style/dummy.html'
+        path: 'https://www.w3.org/Provider/Style/dummy.html',
       }, {
         val: 'see source',
         icons: 'icons/icons8-github-48.png',
-        path: 'https://github.com/zeff96/Personal-Portfolio'
+        path: 'https://github.com/zeff96/Personal-Portfolio',
       },
     ],
   }, {
@@ -87,11 +89,11 @@ const cardArray = [
       {
         val: 'see live',
         icons: 'icons/Icon.png',
-        path: 'https://www.w3.org/Provider/Style/dummy.html'
+        path: 'https://www.w3.org/Provider/Style/dummy.html',
       }, {
         val: 'see source',
         icons: 'icons/icons8-github-48.png',
-        path: 'https://github.com/zeff96/Personal-Portfolio'
+        path: 'https://github.com/zeff96/Personal-Portfolio',
       },
     ],
   },
@@ -180,7 +182,9 @@ cards.forEach((elem) => {
   const btnContainer = document.createElement('div');
   btnContainer.classList.add('btn-container');
 
-  for(let btn in cardArray[elem].demo) {
+  const btnEl = Object.keys(cardArray[elem].demo);
+
+  btnEl.forEach((btn) => {
     const anchor = document.createElement('a');
     anchor.setAttribute('href', cardArray[elem].demo[btn].path);
     const btns = document.createElement('button');
@@ -193,7 +197,7 @@ cards.forEach((elem) => {
     btns.appendChild(icon);
     anchor.appendChild(btns);
     btnContainer.appendChild(anchor);
-  };
+  });
 
   const rightBlock = document.createElement('div');
   rightBlock.classList.add('right-block');
@@ -216,12 +220,12 @@ cards.forEach((elem) => {
 
   buttonEl.addEventListener('click', () => {
     popup.classList.toggle('show');
-    bodyEl.classList.add('flow');
+    bodyEl.classList.add('overlap');
   });
 
   dlt.addEventListener('click', () => {
     popup.classList.toggle('show');
-    bodyEl.classList.remove('flow');
+    bodyEl.classList.remove('overlap');
   });
 });
 
@@ -249,3 +253,27 @@ formEl.addEventListener('submit', (e) => {
 
   checkInput();
 });
+
+const userData = JSON.parse(localStorage.getItem('userInfo'));
+
+if (userData) {
+  nameEl.value = userData.name;
+  emailEl.value = userData.email;
+  textEl.value = userData.text;
+}
+
+function getData() {
+  const nameData = nameEl.value;
+  const emailData = emailEl.value;
+  const textData = textEl.value;
+
+  const userInfo = {
+    name: nameData,
+    email: emailData,
+    text: textData,
+  };
+
+  localStorage.setItem('userInfo', JSON.stringify(userInfo));
+}
+formEl.addEventListener('input', getData);
+formEl.addEventListener('submit', getData);

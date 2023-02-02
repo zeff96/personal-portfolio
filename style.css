@@ -283,7 +283,7 @@ a {
   display: flex;
 }
 
-.flow {
+.overlap {
   overflow: hidden;
 }
 
@@ -653,6 +653,7 @@ a {
   }
 
   .pop-container img {
+    width: 100%;
     height: 56.8rem;
   }
 
