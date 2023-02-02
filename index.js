@@ -262,7 +262,7 @@ if (userData) {
   textEl.value = userData.text;
 }
 
-formEl.addEventListener('submit', () => {
+function getData() {
   const nameData = nameEl.value;
   const emailData = emailEl.value;
   const textData = textEl.value;
@@ -274,4 +274,6 @@ formEl.addEventListener('submit', () => {
   };
 
   localStorage.setItem('userInfo', JSON.stringify(userInfo));
-});
+}
+formEl.addEventListener('input', getData);
+formEl.addEventListener('submit', getData);
