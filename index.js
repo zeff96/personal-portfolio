@@ -29,20 +29,20 @@ const sectionEl = document.querySelector('.work');
 
 const cardArray = [
   {
-    title: 'tonic',
-    img: 'snapshot-portfolio/tonic.png',
-    text: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    title: 'Digital Master Plan',
+    img: 'snapshot-portfolio/caps-1.png',
+    text: 'A strategic website where users can join, buy tickets, check upcoming events and get all information of the event.',
     tech: ['html', 'css', 'javascript'],
-    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
+    description: "DIGITAL MASTER PLAN 2023 is a website i have created for the purpose of marketing and knownledge sharing to our partners and clients who wish to attend Digital Master Plan 2023 summit.All the information are provided in this site.",
     demo: [
       {
         val: 'see live',
         icons: 'icons/Icon.png',
-        path: 'https://www.w3.org/Provider/Style/dummy.html',
+        path: 'https://zeff96.github.io/digital-master-plan.github.io/',
       }, {
         val: 'see source',
         icons: 'icons/icons8-github-48.png',
-        path: 'https://github.com/zeff96/Personal-Portfolio',
+        path: 'https://github.com/zeff96/Capstone-1',
       },
     ],
   }, {
@@ -102,15 +102,15 @@ const cardArray = [
 
 const frameInfo = `
   <p class="client">
-    canopy
+    capstone
   </p>
   <img src="snapshot-portfolio/Counter.png" alt="counter">
   <p class="role">
-    back end dev
+    front end dev
   </p>
   <img src="snapshot-portfolio/Counter.png" alt="counter">
   <p class="year">
-    2015
+    2023
   </p>
 `;
 
