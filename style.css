@@ -1,6 +1,11 @@
 body {
   background: #f7f7f9;
 }
+
+.offcanvas-backdrop {
+  background-color: transparent;
+}
+
 .img {
   width: 100%;
 }
@@ -24,11 +29,14 @@ body {
   background-color: #fff;
 }
 
-@media (min-width: 576px) {
+@media (max-width: 576px) {
   .nav-link {
-    color: blue;
+    color: #fff;
+    font-size: 2rem;
   }
+}
 
+@media (min-width: 576px) {
   #hero,
   #contact {
     background-image: url("images/Header bg@2x.png");
