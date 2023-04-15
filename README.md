@@ -20,9 +20,7 @@
 - [❓ FAQ (OPTIONAL)](#faq)
 - [📝 License](#license)
 
-
 # 📖 PORTFOLIO <a name="about-project"></a>
-
 
 **PORTFOLIO** is a project i have created to show my skills and experience as a soft developer<br>
 All my professional and technical projects are contained in this project.
@@ -30,7 +28,6 @@ All my professional and technical projects are contained in this project.
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
-
 
 <details>
   <summary>Client</summary>
@@ -40,9 +37,7 @@ All my professional and technical projects are contained in this project.
   </ul>
 </details>
 
-
 ### Key Features <a name="key-features"></a>
-
 
 - **Background**
 - **Projects**
@@ -50,25 +45,19 @@ All my professional and technical projects are contained in this project.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-
-- [Live Demo Link]https://zeff96.github.io/Portfolio.github.io/)
+- [Live Demo](https://zeff96.github.io/personal-Portfolio/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
 ## 💻 Getting Started <a name="getting-started"></a>
-
-
 
 To get a local copy up and running, follow these steps.
 
 ### Prerequisites
 
 In order to run this project you need:
-
 
 ```sh
  Vs code
@@ -79,7 +68,6 @@ In order to run this project you need:
 
 Clone this repository to your desired folder:
 
-
 ```sh
   cd my-folder
   git clone git@github.com:zeff96/Personal-Portfolio.git
@@ -88,7 +76,6 @@ Clone this repository to your desired folder:
 ### Install
 
 Install this project with:
-
 
 ```sh
   cd my-project
@@ -126,13 +113,12 @@ To run this project on website run:
 - LinkedIn: [zeffo96](https://linkedin.com/in/zeff-adeka-28060820a)
 
 👤 **Author 2**
+
 - GitHub: [WilhelmK109](https://github.com/WilhelmK109)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
 ## 🔭 Future Features <a name="future-features"></a>
-
 
 - [ ] **More projects**
 - [ ] **All devices screen size display**
@@ -140,37 +126,28 @@ To run this project on website run:
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
 ## 🤝 Contributing <a name="contributing"></a>
 
 Contributions, issues, and feature requests are welcome!
 
 Feel free to check the [issues page](https://github.com/zeff96/Portfolio-setup-and-mobile-first/issues).
 
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 ## ⭐️ Show your support <a name="support"></a>
 
-
 If you like this project you are free to propose changes that you think might be made to even make it better in the future
 
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
 I would like to thank My learning partners, Microverse community as whole for helping me this far in this project
 
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 ## 📝 License <a name="license"></a>
 
 This project is [MIT](LICENSE.md) licensed.
-
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
