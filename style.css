@@ -1,5 +1,33 @@
+body {
+  background: #f7f7f9;
+}
+.img {
+  width: 100%;
+}
+
+#hero {
+  background-image: url("images/header-shapes mobile.png");
+  background-size: cover;
+  border-bottom-left-radius: 4rem;
+}
+
+#about {
+  border-top-right-radius: 4rem;
+}
+
+#contact {
+  border-top-left-radius: 4rem;
+  background: #6070ff;
+}
+
 @media (min-width: 576px) {
   .nav-link {
     color: blue;
+  }
+
+  #hero,
+  #contact {
+    background-image: url("images/Header bg@2x.png");
+    background-size: cover;
   }
 }

@@ -112,7 +112,7 @@ const render = () => {
     >`
     );
 
-    const lists = `<div class="card mb-5 p-2 p-sm-4">
+    const lists = `<div class="card mb-5 p-2 p-sm-4 rounded-4">
       <div class="row g-3">
         <div class="col-sm-6">
           <img src="${card.img}" alt="${card.title}" class="card-img-top" />
@@ -145,7 +145,7 @@ const render = () => {
       aria-hidden="true"
     >
       <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
-        <div class="modal-content">
+        <div class="modal-content rounded-4">
           <div class="modal-header">
             <h2>${card.title}</h2>
             <button
@@ -157,8 +157,8 @@ const render = () => {
           </div>
           <div class="modal-body">
             <div class="d-flex align-items-center gap-3 mb-3">${frameInfo}</div>
-            <div>
-              <img class="img-fluid" src="${card.img}" alt="${card.title}" />
+            <div style="width:100%">
+              <img class="img mb-5" src="${card.img}" alt="${card.title}" />
             </div>
             <div class="row g-2">
               <div class="col-sm-6 col-lg-7">
