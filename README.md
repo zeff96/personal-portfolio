@@ -47,7 +47,7 @@ All my professional and technical projects are contained in this project.
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo](https://zeff96.github.io/personal-Portfolio/)
+- [Live Demo](https://zeff96.github.io/personal-portfolio/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
