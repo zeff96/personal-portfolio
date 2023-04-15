@@ -20,6 +20,10 @@ body {
   background: #6070ff;
 }
 
+.btn {
+  background-color: #fff;
+}
+
 @media (min-width: 576px) {
   .nav-link {
     color: blue;
