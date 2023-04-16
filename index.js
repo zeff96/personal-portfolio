@@ -11,7 +11,7 @@ const cardArray = [
     demo: [
       {
         val: "see live",
-        icons: "icons/Icon.png",
+        icons: "icons/Icon.svg",
         path: "https://zeff96.github.io/digital-master-plan.github.io/",
       },
       {
@@ -31,7 +31,7 @@ const cardArray = [
     demo: [
       {
         val: "see live",
-        icons: "icons/Icon.png",
+        icons: "icons/Icon.svg",
         path: "https://www.w3.org/Provider/Style/dummy.html",
       },
       {
@@ -51,7 +51,7 @@ const cardArray = [
     demo: [
       {
         val: "see live",
-        icons: "icons/Icon.png",
+        icons: "icons/Icon.svg",
         path: "https://www.w3.org/Provider/Style/dummy.html",
       },
       {
@@ -71,7 +71,7 @@ const cardArray = [
     demo: [
       {
         val: "See Live",
-        icons: "icons/Icon.png",
+        icons: "icons/Icon.svg",
         path: "https://www.w3.org/Provider/Style/dummy.html",
       },
       {
