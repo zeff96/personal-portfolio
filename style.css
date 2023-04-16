@@ -25,6 +25,7 @@ body {
 
 #contact {
   background-image: url("images/header-shapes mobile.png");
+  background-size: cover;
   border-top-left-radius: 4rem;
   background: #6070ff;
 }
