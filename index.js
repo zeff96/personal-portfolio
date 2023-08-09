@@ -3,81 +3,81 @@ const sectionEl = document.querySelector(".work");
 const cardArray = [
   {
     title: "Digital Master Plan",
-    img: "snapshot-portfolio/caps-1.png",
+    img: "snapshot-portfolio/master-plan.jpg",
     text: "A strategic website where users can join, buy tickets, check upcoming events and get all information of the event.",
-    tech: ["html", "css", "javascript"],
+    tech: ["HTML", "CSS", "JavaScript"],
     description:
       "DIGITAL MASTER PLAN 2023 is a website i have created for the purpose of marketing and knownledge sharing to our partners and clients who wish to attend Digital Master Plan 2023 summit.All the information are provided in this site.",
     demo: [
       {
         val: "see live",
         icons: "icons/Icon.svg",
-        path: "https://zeff96.github.io/digital-master-plan.github.io/",
+        path: "https://zeff96.github.io/capstone-1/index.html",
       },
       {
         val: "see source",
         icons: "icons/icons8-github-48.png",
-        path: "https://github.com/zeff96/Capstone-1",
+        path: "https://github.com/zeff96/capstone-1",
       },
     ],
   },
   {
-    title: "Multi-Post Stories",
-    img: "snapshot-portfolio/Multi-post.png",
-    text: "A daily selection of privately personalized reads; no accounts or sign-ups required.",
-    tech: ["html", "css", "javascript"],
+    title: "Recipe App",
+    img: "./snapshot-portfolio/recipe.png",
+    text: "In summary, our application is your ultimate kitchen companion. From assembling your food inventory to crafting mouthwatering recipes and generating smart shopping lists, we're here to enhance your culinary journey and make every step a delight.",
+    tech: ["RoR", "Bootstrap", "PostgreSQL"],
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
+      "In essence, our application isn't just about managing food; it's about elevating your entire culinary expedition. Whether you're an aspiring home cook or a seasoned chef, our platform caters to your needs, turning each culinary step into a delightful adventure. Embrace the future of cooking with us – where inventory management, recipe exploration, and smart shopping converge into a single, harmonious experience.",
     demo: [
       {
         val: "see live",
         icons: "./icons/Icon.svg",
-        path: "https://www.w3.org/Provider/Style/dummy.html",
+        path: "https://github.com/zeff96/ror_group_project",
       },
       {
         val: "see source",
         icons: "./icons/icons8-github-48.png",
-        path: "https://github.com/zeff96/Personal-Portfolio",
+        path: "https://github.com/zeff96/ror_group_project",
       },
     ],
   },
   {
-    title: "Tonic",
-    img: "snapshot-portfolio/Snapshoot Portfolio.png",
-    text: "A daily selection of privately personalized reads; no accounts or sign-ups required.",
-    tech: ["html", "css", "javascript"],
+    title: "Doctor's Appointment",
+    img: "snapshot-portfolio/doctor.png",
+    text: "This is a rails API app that provides api endpoints for users to fetch doctors, create doctors and book appointment via secure https request",
+    tech: ["React", "RoR", "PostgreSQL"],
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
+      "This application is a Ruby on Rails API-based system that offers various API endpoints to facilitate user interactions. It allows users to retrieve information about doctors, create new doctor profiles, and book appointments. All interactions with the API are conducted securely over HTTPS, ensuring data privacy and protection. This setup provides a comprehensive solution for managing medical information and appointment scheduling through a web-based interface.",
     demo: [
       {
         val: "see live",
         icons: "icons/Icon.svg",
-        path: "https://www.w3.org/Provider/Style/dummy.html",
+        path: "https://doctor-appointment-cx5g.onrender.com/",
       },
       {
         val: "see source",
         icons: "icons/icons8-github-48.png",
-        path: "https://github.com/zeff96/Personal-Portfolio",
+        path: "https://github.com/zeff96/doctor_appointment_back_end",
       },
     ],
   },
   {
-    title: "Multi-Post Stories",
-    img: "snapshot-portfolio/Snapshoot .png",
-    text: "A daily selection of privately personalized reads; no accounts or sign-ups required.",
-    tech: ["html", "css", "javascript"],
+    title: "Crypto Currency",
+    img: "snapshot-portfolio/bitcoin-app.jpg",
+    text: "This is a website that allow users to get bitcoins from the api and allows users to get details of each bitcoin from the api as well",
+    tech: ["React", "Redux", "JavaScript"],
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
+      "This application is a web-based platform that offers users the capability to interact with a Bitcoin API. It enables users to both acquire bitcoins from the API and retrieve detailed information about individual bitcoins. Through this platform, users can access real-time data related to the Bitcoin cryptocurrency, facilitating transactions and analysis of the Bitcoin market.",
     demo: [
       {
         val: "See Live",
         icons: "icons/Icon.svg",
-        path: "https://www.w3.org/Provider/Style/dummy.html",
+        path: "https://bitcoins.onrender.com/",
       },
       {
         val: "See Source",
         icons: "icons/icons8-github-48.png",
-        path: "https://github.com/zeff96/Personal-Portfolio",
+        path: "https://github.com/zeff96/crypto_currency_app",
       },
     ],
   },
@@ -99,12 +99,16 @@ const frameInfo = `
 
 const render = () => {
   cardArray.forEach((card, index) => {
+    const isEven = index % 2 === 0;
+    const imgOrder = isEven ? 1 : 2
+    const bodyOrder = isEven ? 2 : 1
+
     const listTech = card.tech.map(
       (item) => `<li class="bg-light rounded px-2 text-primary">${item}</li>`
     );
 
     const listBtn = card.demo.map(
-      (item) => `<a href="${item.path}">
+      (item) => `<a href="${item.path}" target="blank">
       <button class="btn btn-outline-primary">
         ${item.val}
         <img src ="${item.icons}" alt="${item.val}" style="width:1.5rem"/>
@@ -114,10 +118,10 @@ const render = () => {
 
     const lists = `<div class="card mb-5 p-2 p-sm-4 rounded-4">
       <div class="row g-3">
-        <div class="col-sm-6">
-          <img src="${card.img}" alt="${card.title}" class="card-img-top" />
+        <div class="col-12 col-md-6 order-md-${imgOrder}">
+          <img src="${card.img}" alt="${card.title}" class="img-fluid" />
         </div>
-        <div class="col-sm-6">
+        <div class="col-12 col-md-6 order-md-${bodyOrder}">
           <div class="card-body">
             <h5 class="card-title h1 fw-bold mb-4">${card.title}</h5>
             <div class="d-flex align-items-center gap-3 mb-4">${frameInfo}</div>
@@ -158,7 +162,7 @@ const render = () => {
           <div class="modal-body">
             <div class="d-flex align-items-center gap-3 mb-3">${frameInfo}</div>
             <div style="width:100%">
-              <img class="img mb-5" src="${card.img}" alt="${card.title}" />
+              <img class="img-fluid mb-5" src="${card.img}" alt="${card.title}" />
             </div>
             <div class="row g-2">
               <div class="col-sm-6 col-lg-7">

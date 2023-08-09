@@ -3,10 +3,7 @@
 body {
   background: #f7f7f9;
   font-family: Poppins, sans-serif;
-}
-
-.img {
-  width: 100%;
+  overflow-x: hidden;
 }
 
 #hero {
@@ -19,6 +16,23 @@ body {
   justify-content: center;
 }
 
+.fa-brands {
+  transition: transform 0.4s;
+}
+
+.fa-brands:hover {
+  transform: scale(2);
+}
+
+.card {
+  transition: transform 0.4s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  border: 1px solid #6070ff;
+}
+
 #about {
   border-top-right-radius: 4rem;
 }
@@ -27,10 +41,16 @@ body {
   background-color: #fff;
   border: none;
   outline: none;
+  transition: transform 0.4s;
+}
+
+.framework-btn:hover {
+  transform: scale(2);
 }
 
 #contact {
   background-image: url("./images/contact\ form\ shapes-mobile@2x.svg");
+  background-repeat: cover;
   background-repeat: no-repeat !important;
   border-top-left-radius: 4rem;
   background: #6070ff;
