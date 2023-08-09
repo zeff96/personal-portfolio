@@ -5,29 +5,37 @@ body {
   font-family: Poppins, sans-serif;
 }
 
-.offcanvas-backdrop {
-  background-color: transparent;
-}
-
 .img {
   width: 100%;
 }
 
 #hero {
-  background-image: url("images/header-shapes mobile.png");
-  background-size: cover;
+  background-image: url("./images/header-shapes\ mobile@2x.svg");
+  background-repeat: cover;
+  background-repeat: no-repeat;
   border-bottom-left-radius: 4rem;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
 }
 
 #about {
   border-top-right-radius: 4rem;
 }
 
+.framework-btn {
+  background-color: #fff;
+  border: none;
+  outline: none;
+}
+
 #contact {
-  background-image: url("images/header-shapes mobile.png");
-  background-size: cover;
+  background-image: url("./images/contact\ form\ shapes-mobile@2x.svg") !important;
+  background-repeat: no-repeat !important;
+  background-position: center, right;
   border-top-left-radius: 4rem;
   background: #6070ff;
+  height: 100vh;
 }
 
 .btn {
@@ -42,9 +50,11 @@ body {
 }
 
 @media (min-width: 576px) {
-  #hero,
+  #hero {
+    background-image: url("./images/Header\ bg.svg");
+  }
+
   #contact {
-    background-image: url("images/Header bg@2x.png");
-    background-size: cover;
+    background-image: url("./images/contact\ form\ background\ shapes.svg");
   }
 }

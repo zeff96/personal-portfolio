@@ -31,12 +31,12 @@ const cardArray = [
     demo: [
       {
         val: "see live",
-        icons: "icons/Icon.svg",
+        icons: "./icons/Icon.svg",
         path: "https://www.w3.org/Provider/Style/dummy.html",
       },
       {
         val: "see source",
-        icons: "icons/icons8-github-48.png",
+        icons: "./icons/icons8-github-48.png",
         path: "https://github.com/zeff96/Personal-Portfolio",
       },
     ],
