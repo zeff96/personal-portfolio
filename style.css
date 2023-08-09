@@ -30,9 +30,8 @@ body {
 }
 
 #contact {
-  background-image: url("./images/contact\ form\ shapes-mobile@2x.svg") !important;
+  background-image: url("./images/contact\ form\ shapes-mobile@2x.svg");
   background-repeat: no-repeat !important;
-  background-position: center, right;
   border-top-left-radius: 4rem;
   background: #6070ff;
   height: 100vh;
