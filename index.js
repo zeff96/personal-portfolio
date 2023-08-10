@@ -22,22 +22,22 @@ const cardArray = [
     ],
   },
   {
-    title: "Recipe App",
-    img: "./snapshot-portfolio/recipe.png",
-    text: "In summary, our application is your ultimate kitchen companion. From assembling your food inventory to crafting mouthwatering recipes and generating smart shopping lists, we're here to enhance your culinary journey and make every step a delight.",
-    tech: ["RoR", "Bootstrap", "PostgreSQL"],
+    title: "Bookstore App",
+    img: "./snapshot-portfolio/bookstore.jpg",
+    text: "Application that allows users to add books,update the progess of the books and delete the books once completed",
+    tech: ["React", "Redux", "Bootstrap", "JavaScript"],
     description:
-      "In essence, our application isn't just about managing food; it's about elevating your entire culinary expedition. Whether you're an aspiring home cook or a seasoned chef, our platform caters to your needs, turning each culinary step into a delightful adventure. Embrace the future of cooking with us – where inventory management, recipe exploration, and smart shopping converge into a single, harmonious experience.",
+      "A sophisticated software solution has been developed to empower users in seamlessly managing their personal literary journeys. This meticulously crafted application provides an avenue for users to effortlessly input, update, and efficiently curate their collection of books. With its intuitive interface and comprehensive features, it elevates the experience of book tracking to a new level of professionalism.",
     demo: [
       {
         val: "see live",
         icons: "./icons/Icon.svg",
-        path: "https://github.com/zeff96/ror_group_project",
+        path: "https://books-store-d9d1.onrender.com/",
       },
       {
         val: "see source",
         icons: "./icons/icons8-github-48.png",
-        path: "https://github.com/zeff96/ror_group_project",
+        path: "https://github.com/zeff96/bookstore",
       },
     ],
   },
@@ -108,7 +108,7 @@ const render = () => {
     );
 
     const listBtn = card.demo.map(
-      (item) => `<a href="${item.path}" target="blank">
+      (item) => `<a href="${item.path}" target="_blank">
       <button class="btn btn-outline-primary">
         ${item.val}
         <img src ="${item.icons}" alt="${item.val}" style="width:1.5rem"/>
@@ -119,7 +119,7 @@ const render = () => {
     const lists = `<div class="card mb-5 p-2 p-sm-4 rounded-4">
       <div class="row g-3">
         <div class="col-12 col-md-6 order-md-${imgOrder}">
-          <img src="${card.img}" alt="${card.title}" class="img-fluid" />
+          <img src="${card.img}" alt="${card.title}" class="img-fluid rounded-2" />
         </div>
         <div class="col-12 col-md-6 order-md-${bodyOrder}">
           <div class="card-body">
@@ -162,7 +162,7 @@ const render = () => {
           <div class="modal-body">
             <div class="d-flex align-items-center gap-3 mb-3">${frameInfo}</div>
             <div style="width:100%">
-              <img class="img-fluid mb-5" src="${card.img}" alt="${card.title}" />
+              <img class="img-fluid rounded-2 mb-5" src="${card.img}" alt="${card.title}" />
             </div>
             <div class="row g-2">
               <div class="col-sm-6 col-lg-7">
